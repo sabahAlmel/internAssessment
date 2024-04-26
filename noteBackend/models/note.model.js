@@ -13,6 +13,6 @@ noteSchema.pre("save", function (next) {
   next();
 });
 
-const Note = mongoose.model("Post", noteSchema);
+const Note = mongoose.model("Note", noteSchema);
 
 export default Note;
