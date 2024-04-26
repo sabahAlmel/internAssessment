@@ -10,9 +10,9 @@ import {
 const noteRouter = express.Router();
 
 noteRouter.get("/getAll", getAllNotes);
-noteRouter.get("/getOne", getNoteById);
+noteRouter.get("/getOne/:id", getNoteById);
 noteRouter.post("/create", create);
-noteRouter.put("/update", update);
-noteRouter.delete("/delete", deleteNote);
+noteRouter.put("/update/:id", update);
+noteRouter.delete("/delete/:id", deleteNote);
 
 export default noteRouter;
